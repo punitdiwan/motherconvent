@@ -65,7 +65,7 @@ const Vissionmission = () => {
                       }}
                   >
                     <img
-                      src={`${baseUrl}/uploads/mayflower/originals/e6e1cccc-bf5d-482a-9579-588f2d119735.jpeg`}
+                      // src={`${baseUrl}/uploads/mayflower/originals/e6e1cccc-bf5d-482a-9579-588f2d119735.jpeg`}
                       style={{ width: '100%' }}
                       alt="Mission"
                     />
