@@ -67,9 +67,9 @@ const AcademicFacilities = () => {
   ];
   const activities4 = [
     { title: "/placeholder/s1.jpg", },
-    { title: "/placeholder/s2.jpg", },
-    { title: "/placeholder/s3.jpg", },
-    { title: "/placeholder/s4.jpg", },
+    { title: "/placeholder/s1.jpg", },
+    { title: "/placeholder/s1.jpg", },
+    { title: "/placeholder/s1.jpg", },
   ];
 
   const activities2 = [
@@ -97,9 +97,9 @@ const AcademicFacilities = () => {
 
   const games = [
     { title: "/placeholder/s1.jpg", name: "Demo Name", },
-    { title: "/placeholder/s2.jpg", name: "Demo Name", },
-    { title: "/placeholder/s3.jpg", name: "Demo Name", },
-    { title: "/placeholder/s4.jpg", name: "Demo Name", },
+    { title: "/placeholder/s1.jpg", name: "Demo Name", },
+    { title: "/placeholder/s1.jpg", name: "Demo Name", },
+    { title: "/placeholder/s1.jpg", name: "Demo Name", },
   ];
 
   const artcraft = [

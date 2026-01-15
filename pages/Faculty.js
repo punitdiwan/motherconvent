@@ -19,7 +19,9 @@ function Faculty() {
 //         return <div>No Data...</div>
 //     }
     return (
-        <></>
+        <>
+        
+        </>
         // <Layout>
         //     <div className='about' style={{ background: 'none' }}>
         //         <div className='container location_header' style={{ marginTop: '10rem' }}>

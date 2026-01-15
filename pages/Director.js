@@ -16,11 +16,13 @@ const Director = ({ data_header, director_data }) => {
             <div className='thennow'>
               <img
                 // src={person?.photo?.data?.full_url?.replace('http://', 'https://') || "/images/a1.jpg"}
+                src={""}
                 alt='director'
                 style={{ width: "110%", height: "350px" }}
               />
               <h2 className="text-center">
-                <b>{person?.full_name || "Mrs. Meenakshi Mehta "}</b>
+                {/* <b>{person?.full_name || "Mrs. Meenakshi Mehta "}</b> */}
+                <b>"Mrs. Meenakshi Mehta "</b>
               </h2>
             </div>
           </div>
