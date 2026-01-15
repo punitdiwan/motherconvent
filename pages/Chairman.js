@@ -57,27 +57,27 @@ const Chairman = ({ data_header, chairman_data }) => {
 
 export default Chairman;
 
-export async function getStaticProps() {
-    let data_header;
-     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-    const schoolName = process.env.NEXT_PUBLIC_SCHOOL;
-    try {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/config?fields=*,logo.data.full_url`);
-        data_header = await response.json();
-    } catch (error) {
-        data_header = false;
-    }
+// export async function getStaticProps() {
+//     let data_header;
+//      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+//     const schoolName = process.env.NEXT_PUBLIC_SCHOOL;
+//     try {
+//         const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/config?fields=*,logo.data.full_url`);
+//         data_header = await response.json();
+//     } catch (error) {
+//         data_header = false;
+//     }
 
-    let chairman_data;
-    try {
-        const response1 = await fetch(`${baseUrl}/${schoolName}/items/faculty1?fields=*.*.*`);
-        chairman_data = await response1.json();
-    } catch (error) {
-        chairman_data = false;
-    }
+//     let chairman_data;
+//     try {
+//         const response1 = await fetch(`${baseUrl}/${schoolName}/items/faculty1?fields=*.*.*`);
+//         chairman_data = await response1.json();
+//     } catch (error) {
+//         chairman_data = false;
+//     }
 
-    return {
-        props: { data_header, chairman_data },
-        revalidate: 1, // will be passed to the page component as props
-    };
-}
+//     return {
+//         props: { data_header, chairman_data },
+//         revalidate: 1, // will be passed to the page component as props
+//     };
+// }

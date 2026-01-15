@@ -21,37 +21,37 @@ const ContactUsForm = () => {
     const [successMessage, setSuccessMessage] = useState(""); // State for success message
 
     var pattern = new RegExp(/^[0-9\b]+$/);
-     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-    const schoolName = process.env.NEXT_PUBLIC_SCHOOL;
+    //  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+    // const schoolName = process.env.NEXT_PUBLIC_SCHOOL;
     const submit = (e) => {
         e.preventDefault();
         const isValid = formValidation();
         if (isValid) {
-            fetch(
-                `${baseUrl}/${schoolName}/items/contact_form?fields=*.*.*`,
-                {
-                    method: "POST",
-                    body: JSON.stringify({ full_name: name, email, mobile, message }),
-                    headers: { "Content-type": "application/json; charset=UTF-8" },
-                }
-            )
-                .then((response) => {
-                    response.json();
-                    if (response.status === 200) {
-                        setName("");
-                        setEmail("");
-                        setMobile("");
-                        setMessage("");
-                        setSuccessMessage("Form submitted successfully!"); // Set the success message
-                    }
-                })
-                // .then((json) =>
-                //     addToast("form submitted Sucessfully", {
-                //         appearance: "success",
-                //         autoDismiss: true,
-                //     })
-                // )
-                .catch((err) => console.log(err));
+            // fetch(
+            //     `${baseUrl}/${schoolName}/items/contact_form?fields=*.*.*`,
+            //     {
+            //         method: "POST",
+            //         body: JSON.stringify({ full_name: name, email, mobile, message }),
+            //         headers: { "Content-type": "application/json; charset=UTF-8" },
+            //     }
+            // )
+            //     .then((response) => {
+            //         response.json();
+            //         if (response.status === 200) {
+            //             setName("");
+            //             setEmail("");
+            //             setMobile("");
+            //             setMessage("");
+            //             setSuccessMessage("Form submitted successfully!"); // Set the success message
+            //         }
+            //     })
+            //     // .then((json) =>
+            //     //     addToast("form submitted Sucessfully", {
+            //     //         appearance: "success",
+            //     //         autoDismiss: true,
+            //     //     })
+            //     // )
+            //     .catch((err) => console.log(err));
         }
     };
 

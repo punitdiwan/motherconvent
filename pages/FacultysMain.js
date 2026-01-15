@@ -14,28 +14,28 @@ const FacultysMain = ({ Teacher_data }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-  const schoolName = process.env.NEXT_PUBLIC_SCHOOL;
+//   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+//   const schoolName = process.env.NEXT_PUBLIC_SCHOOL;
 
-  useEffect(() => {
-    axios.get(`${baseUrl}/${schoolName}/items/facultymain?fields=*.*.*`)
-      .then((response) => {
+//   useEffect(() => {
+//     axios.get(`${baseUrl}/${schoolName}/items/facultymain?fields=*.*.*`)
+//       .then((response) => {
 
-        if (response?.data?.data?.length > 0) {
+//         if (response?.data?.data?.length > 0) {
 
-          setData(response.data.data);
-        } else {
-          setData([]); // Handle empty data gracefully  
-        }
-        setLoading(false);
-      })
-      .catch((err) => {
-        setError("Failed to load data.");
-        setLoading(false);
-      });
-  }, []);
+//           setData(response.data.data);
+//         } else {
+//           setData([]); // Handle empty data gracefully  
+//         }
+//         setLoading(false);
+//       })
+//       .catch((err) => {
+//         setError("Failed to load data.");
+//         setLoading(false);
+//       });
+//   }, []);
 
-  console.log(data)
+//   console.log(data)
 
  
 

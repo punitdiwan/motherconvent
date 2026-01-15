@@ -5,20 +5,20 @@ import axios from 'axios';
 
 function Newsevent() {
     const [data, setdata] = useState("");
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-    const schoolName = process.env.NEXT_PUBLIC_SCHOOL;
-    useEffect(() => {
-        axios.get(`${baseUrl}/${schoolName}/items/events?fields=*.*.*`)
-            .then((response) => {
-                if (response?.data?.data?.length > 0) {
-                    console.log(response);
-                    setdata(response);
-                }
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-    }, []);
+    // const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+    // const schoolName = process.env.NEXT_PUBLIC_SCHOOL;
+    // useEffect(() => {
+    //     axios.get(`${baseUrl}/${schoolName}/items/events?fields=*.*.*`)
+    //         .then((response) => {
+    //             if (response?.data?.data?.length > 0) {
+    //                 console.log(response);
+    //                 setdata(response);
+    //             }
+    //         })
+    //         .catch((error) => {
+    //             console.log(error);
+    //         });
+    // }, []);
 
     const filteredData = [
         { id: 2, created_on: "2020-12-15T05:19:39+00:00", eventdate: "2020-12-23", title: "Books will be available on the specific date." },

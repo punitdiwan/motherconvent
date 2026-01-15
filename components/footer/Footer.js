@@ -181,21 +181,21 @@ function Footer() {
 
 export default Footer;
 
-export async function getStaticProps(context) {
-  let data_header;
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-  const schoolName = process.env.NEXT_PUBLIC_SCHOOL;
-  try {
-    const response = await fetch(
-      `${baseUrl}/${schoolName}/items/config?fields=*,logo.data.full_url`
-    );
-    data_header = await response.json();
-  } catch (error) {
-    data_header = false;
-  }
+// export async function getStaticProps(context) {
+//   let data_header;
+//   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+//   const schoolName = process.env.NEXT_PUBLIC_SCHOOL;
+//   try {
+//     const response = await fetch(
+//       `${baseUrl}/${schoolName}/items/config?fields=*,logo.data.full_url`
+//     );
+//     data_header = await response.json();
+//   } catch (error) {
+//     data_header = false;
+//   }
 
-  return {
-    props: { data_header },
-    revalidate: 2,
-  };
-}
+//   return {
+//     props: { data_header },
+//     revalidate: 2,
+//   };
+// }

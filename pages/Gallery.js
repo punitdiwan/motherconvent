@@ -62,32 +62,32 @@ const Gallery = ({ data_header, gallery_data }) => {
 
 export default Gallery;
 
-export async function getStaticProps(context) {
-  let data_header;
-  let gallery_data;
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-  const schoolName = process.env.NEXT_PUBLIC_SCHOOL;
+// export async function getStaticProps(context) {
+//   let data_header;
+//   let gallery_data;
+//   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+//   const schoolName = process.env.NEXT_PUBLIC_SCHOOL;
 
-  try {
-    const response = await fetch(
-      `${baseUrl}/${schoolName}/items/config?fields=*,logo.data.full_url`
-    );
-    data_header = await response.json();
-  } catch (error) {
-    data_header = false;
-  }
+//   try {
+//     const response = await fetch(
+//       `${baseUrl}/${schoolName}/items/config?fields=*,logo.data.full_url`
+//     );
+//     data_header = await response.json();
+//   } catch (error) {
+//     data_header = false;
+//   }
 
-  try {
-    const response1 = await fetch(
-      `${baseUrl}/${schoolName}/items/gallery?fields=*.*.*`
-    );
-    gallery_data = await response1.json();
-  } catch (error) {
-    gallery_data = false;
-  }
+//   try {
+//     const response1 = await fetch(
+//       `${baseUrl}/${schoolName}/items/gallery?fields=*.*.*`
+//     );
+//     gallery_data = await response1.json();
+//   } catch (error) {
+//     gallery_data = false;
+//   }
 
-  return {
-    props: { data_header, gallery_data },
-    revalidate: 1,
-  };
-}
+//   return {
+//     props: { data_header, gallery_data },
+//     revalidate: 1,
+//   };
+// }

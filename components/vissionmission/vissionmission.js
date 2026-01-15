@@ -1,5 +1,5 @@
 const Vissionmission = () => {
-  let baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  // let baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
     return (
       <>
         <section>
@@ -38,7 +38,8 @@ const Vissionmission = () => {
                     }}
                   >
                     <img
-                      src={`${baseUrl}/uploads/mayflower/originals/e6e1cccc-bf5d-482a-9579-588f2d119735.jpeg`}
+                      // src={`${baseUrl}/uploads/mayflower/originals/e6e1cccc-bf5d-482a-9579-588f2d119735.jpeg`}
+                      src={""}
                       style={{ width: '100%' }}
                       alt="Vision"
                     />

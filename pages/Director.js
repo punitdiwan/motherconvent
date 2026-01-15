@@ -15,7 +15,7 @@ const Director = ({ data_header, director_data }) => {
           <div className='directorimg'>
             <div className='thennow'>
               <img
-                src={person?.photo?.data?.full_url?.replace('http://', 'https://') || "/images/a1.jpg"}
+                // src={person?.photo?.data?.full_url?.replace('http://', 'https://') || "/images/a1.jpg"}
                 alt='director'
                 style={{ width: "110%", height: "350px" }}
               />
@@ -50,29 +50,29 @@ const Director = ({ data_header, director_data }) => {
 
 export default Director;
 
-export async function getStaticProps() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-  const schoolName = process.env.NEXT_PUBLIC_SCHOOL;
+// export async function getStaticProps() {
+//   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+//   const schoolName = process.env.NEXT_PUBLIC_SCHOOL;
 
-  let data_header = false;
-  let director_data = false;
+//   let data_header = false;
+//   let director_data = false;
 
-  try {
-    const response = await fetch(`${baseUrl}/${schoolName}/items/config?fields=*,logo.data.full_url`);
-    data_header = await response.json();
-  } catch (error) {
-    console.error("Header fetch failed:", error);
-  }
+//   try {
+//     const response = await fetch(`${baseUrl}/${schoolName}/items/config?fields=*,logo.data.full_url`);
+//     data_header = await response.json();
+//   } catch (error) {
+//     console.error("Header fetch failed:", error);
+//   }
 
-  try {
-    const response1 = await fetch(`${baseUrl}/${schoolName}/items/faculty1?fields=*.*.*`);
-    director_data = await response1.json();
-  } catch (error) {
-    console.error("Director data fetch failed:", error);
-  }
+//   try {
+//     const response1 = await fetch(`${baseUrl}/${schoolName}/items/faculty1?fields=*.*.*`);
+//     director_data = await response1.json();
+//   } catch (error) {
+//     console.error("Director data fetch failed:", error);
+//   }
 
-  return {
-    props: { data_header, director_data },
-    revalidate: 1,
-  };
-}
+//   return {
+//     props: { data_header, director_data },
+//     revalidate: 1,
+//   };
+// }

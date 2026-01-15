@@ -10,21 +10,21 @@ function Toppercarousel() {
 
   const [data, setdata] = useState("")
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-  const schoolName = process.env.NEXT_PUBLIC_SCHOOL;
-  useEffect(() => {
-    axios.get(`${baseUrl}/${schoolName}/items/toppers?fields=*.*.*`)
-      .then((response) => {
-        if (response?.data?.data?.length > 0) {
-          setdata(response)
-        }
-      })
-      .catch((error) => {
-        console.log(error);
-      })
+  // const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  // const schoolName = process.env.NEXT_PUBLIC_SCHOOL;
+  // useEffect(() => {
+  //   axios.get(`${baseUrl}/${schoolName}/items/toppers?fields=*.*.*`)
+  //     .then((response) => {
+  //       if (response?.data?.data?.length > 0) {
+  //         setdata(response)
+  //       }
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     })
 
 
-  }, [])
+  // }, [])
 
 
   const slides = [
