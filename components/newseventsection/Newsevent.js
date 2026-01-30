@@ -74,7 +74,8 @@ function Newsevent() {
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <span className="in-turquoise"><h6>+ Read more</h6></span>
+                                                            {/* <span className="in-turquoise"><h6>+ Read more</h6></span> */}
+                                                            {/* <span className="read-more">Read More</span> */}
                                                         </div>
                                                         <div className="in-content" id="nid">{item.title}</div>
                                                     </li>

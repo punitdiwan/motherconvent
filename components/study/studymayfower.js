@@ -6,7 +6,7 @@ const diseaseTabs = [
     {
       title: "Best School in Bhopal",
       link: "https://drbindras.com/cancer-treatment/",
-      image: "placeholder/music.jpg",
+      image: "new image/img1.avif",
       description:
         "Mother Convent School is a vibrant learning community where curiosity thrives, creativity blossoms, and every student is empowered to reach their full potential. We believe in nurturing not only academic excellence but also strong values and a sense of global citizenship..",
       signs: ["Weight loss", "Fatigue", "Lumps", "Skin changes"],

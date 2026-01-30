@@ -133,22 +133,22 @@ const Schoolgallery = ({ }) => {
         <div className="row">
           <div className="col-lg-3">
             <div className="scl-gallery">
-              <img src={'./placeholder/art1.jpg'} style={{ width: '100%', height: '200px' }}></img>
+              <img src={'./new image/img2.avif'} style={{ width: '100%', height: '200px' }}></img>
             </div>
           </div>
           <div className="col-lg-3">
             <div className="scl-gallery">
-              <img src={'./placeholder/art2.jpg'} style={{ width: '100%', height: '200px' }}></img>
+              <img src={'./new image/img3.jpg'} style={{ width: '100%', height: '200px' }}></img>
             </div>
           </div>
           <div className="col-lg-3">
             <div className="scl-gallery">
-              <img src={'./placeholder/art3.jpg'} style={{ width: '100%', height: '200px' }}></img>
+              <img src={'./new image/img4.jpg'} style={{ width: '100%', height: '200px' }}></img>
             </div>
           </div>
           <div className="col-lg-3">
             <div className="scl-gallery">
-              <img src={'./placeholder/art4.jpg'} style={{ width: '100%', height: '200px' }}></img>
+              <img src={'./new image/img6.jpg'} style={{ width: '100%', height: '200px' }}></img>
             </div>
           </div>
 
@@ -156,22 +156,22 @@ const Schoolgallery = ({ }) => {
         <div className="row mt-3">
           <div className="col-lg-3">
             <div className="scl-gallery">
-              <img src={'./placeholder/art5.jpg'} style={{ width: '100%', height: '200px' }}></img>
+              <img src={'./new image/img1.avif'} style={{ width: '100%', height: '200px' }}></img>
             </div>
           </div>
           <div className="col-lg-3">
             <div className="scl-gallery">
-              <img src={'./placeholder/art6.jpg'} style={{ width: '100%', height: '200px' }}></img>
+              <img src={'./new image/img3.jpg'} style={{ width: '100%', height: '200px' }}></img>
             </div>
           </div>
           <div className="col-lg-3">
             <div className="scl-gallery">
-              <img src={'./placeholder/art7.jpg'} style={{ width: '100%', height: '200px' }}></img>
+              <img src={'./new image/img5.jpg'} style={{ width: '100%', height: '200px' }}></img>
             </div>
           </div>
           <div className="col-lg-3">
             <div className="scl-gallery">
-              <img src={'./placeholder/art8.jpg'} style={{ width: '100%', height: '200px' }}></img>
+              <img src={'./new image/img2.avif'} style={{ width: '100%', height: '200px' }}></img>
             </div>
           </div>
           <div className="mt-3 text-center ">

@@ -13,12 +13,12 @@ const Gallery = ({ data_header, gallery_data }) => {
           src: item?.photo?.data?.full_url?.replace("http://", "https://"),
         }))
       : [
-          { src: "/placeholder/column1.jpg" },
-          { src: "/placeholder/column4.jpg" },
-          { src: "/placeholder/column6.jpg" },
-          { src: "/placeholder/column2.jpg" },
-          { src: "/placeholder/column3.jpg" },
-          { src: "/placeholder/column5.jpg" },
+          { src: "/new image/img7.jpg" },
+          { src: "new image/img6.jpg" },
+          { src: "new image/img5.jpg" },
+          { src: "new image/img4.jpg" },
+          { src: "new image/img3.jpg" },
+          { src: "new image/img2.avif" },
         ];
 
   const handleImageClick = (index) => {
