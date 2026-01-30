@@ -51,7 +51,7 @@ function Toppercarousel() {
                 justifyContant: 'center',
                 height: '220px',
                 border: '1px solid #9E9E9E',
-                padding: '7px',
+                padding: '1px',
                 backgroundColor: '#fff',
                 borderRadius: '5px'
               }}
@@ -64,7 +64,7 @@ function Toppercarousel() {
             <center className='toppername'> {item.name} </center>
             <img
               className="d-block"
-              src={"placeholder/sf1.jpg"}
+              src={"new image/img7.jpg"}
               alt="First slide"
               style={{
                 width: '85%',
@@ -73,7 +73,7 @@ function Toppercarousel() {
                 justifyContant: 'center',
                 height: '220px',
                 border: '1px solid #9E9E9E',
-                padding: '7px',
+                padding: '1px',
                 backgroundColor: '#fff',
                 borderRadius: '5px'
               }}

@@ -17,14 +17,14 @@ import useSWR from 'swr';
 function Header() {
   // const [menu,setMenu]=useState(false);
   function toggleMenu() {
-  //  setMenu(!menu)
+    //  setMenu(!menu)
     let nav = document.querySelector(".nav");
     let toggle = document.querySelector(".toggle");
     nav.classList.toggle("active");
     toggle.classList.toggle("active");
     const x = document.getElementById("navigation");
-    console.log("x.style.display",x.style.display);
-    
+    console.log("x.style.display", x.style.display);
+
     if (x.style.display === "none") {
       x.style.display = "block";
       // x.style.position = "absolute";
@@ -43,14 +43,14 @@ function Header() {
 
 
   return (
-    
+
     <>
 
 
 
 
       <div className="header">
-      {/* <div className="top-bar">
+        {/* <div className="top-bar">
     <div className="top-bar-icon">
       <Link href="https://www.facebook.com/p/May-flower-public-school-bhopal-100057544926014/" target="_blank">
         <FaFacebookF color="white" size={20} />
@@ -74,169 +74,182 @@ function Header() {
 
 
 
-        <div className="bg-img" >
-
+        {/* <div className="bg-img" >
+        
 
 
 
 
           <div className="contant">
             <div className="container-fluid" >
-                  <div className="row header-row">
-          
-                <div className="col-lg-1 " style={{}}>
-                <div className="header-logo-img" >
-                        <img src="./images/mothr2.png" style={{width:'100%',height:'100%',marginBottom:'20px'}}></img>
+              <div className="row header-row">
 
-                      </div>
+                <div className="col-lg-1 " style={{}}>
+                  <div className="header-logo-img" >
+                    <img src="./images/logoo.png" style={{ width: '120%', }}></img>
+                  </div>
                 </div>
                 <div className="col-lg-5 scl" >
                   <div>
 
                     <span style={{
-}}>MOTHER CONVENT SCHOOL</span>
-                  
-                  {/* <p class="px-3 d-flex justify-content-center " style={{fontSize: '16px',  color: '#fff',
-    fontWeight: "1000",}}>your child deserves the best education.</p> */}
-                  </div>
-         
-                    </div>
-                
+                      display: "flex",
+                      fontSize: "35px", paddingLeft: "10px", fontFamily: "Georgia, serif", height: "100%", alignItems: "center"
+                    }}>MOTHER CONVENT SCHOOL</span>
 
-                    <div className="col-lg-5 sty-contact">
-  <p className="text-center" style={{marginTop:'50px',marginLeft:'30px'}}>Mother Convent School,  powerhouse road, bhopal Jn., bhopal, 462010
-                - Semra Gate, bhopal, 462010</p>
-                    </div>
-            
+                    <p class="px-3 d-flex justify-content-center " style={{fontSize: '16px',  color: '#fff',
+    fontWeight: "1000",}}>your child deserves the best education.</p>
+                  </div>
+
+                </div>
+
+
+                <div className="col-lg-5 sty-contact">
+                  <p className="text-center" style={{ marginTop: '50px', marginLeft: '30px', paddingTop: "15px" }}>Mother Convent School,  powerhouse road, bhopal Jn., bhopal, 462010
+                    - Semra Gate, bhopal, 462010</p>
+                </div>
+
               </div>
             </div>
 
+ */}
 
-
-
-
-
-
-            <div className="icons">
-              <ul>
-                <Socialicon />
-              </ul>
+        <div class="header">
+          <div class="banner">
+            <div class="left">
+              <img src="./images/logoo.png" width={"120px"} height={"120px"} />
+              <span class="leftText">
+                MOTHER CONVENT SCHOOL</span>
             </div>
-
-            <div className="toggle" onClick={toggleMenu} style={{  }}>
-              &nbsp;
-              <FontAwesomeIcon icon={faBars} />
-              <span>&ensp;MENU</span>
+            <div class="right">
+              <p class="right-text" >Mother Convent School,  powerhouse road, bhopal Jn., bhopal, 462010
+                - Semra Gate, bhopal, 462010</p>
             </div>
-            <div className="container-fluid bg-light" style={{backgroundColor:'#fff',marginTop:'20px' }}>
-            <div className="nav" id="navbar" style={{ color: "#030d49",  lineHeight: "25px" }}>
-              <ul className="text-center" id="navigation" style={{marginTop:'10px', }}>
-                <li>
-                  <Link href="/" style={{ color: "#030d49", backgroundColor: "#fff",}}>Home</Link>&ensp;|&ensp;
-                </li>
+          </div>
+        </div>
 
-                <li>
-                  <button className="dropdownbtn" style={{ color: "#030d49", backgroundColor: "#fff" }}>
-                    About Us <FontAwesomeIcon icon={faCaretDown} />
-                    <div className="dropdownmenu">
 
-                      <li>
-                        <Link href="/Chairman">Chairman's Desk</Link>
-                      </li>
-                      <li>
-                        <Link href="/Principal">principal's desk</Link>
-                      </li>
-                      <li>
-                        <Link href="/Director">Admin</Link>
-                      </li>
-{/*                       <li>
+
+
+
+        <div className="icons">
+          <ul>
+            <Socialicon />
+          </ul>
+        </div>
+
+        <div className="toggle" onClick={toggleMenu} style={{}}>
+          &nbsp;
+          <FontAwesomeIcon icon={faBars} />
+          <span>&ensp;MENU</span>
+        </div>
+        <div className="container-fluid bg-light" style={{ backgroundColor: '#fff', marginTop: '20px' }}>
+          <div className="nav" id="navbar" style={{ color: "#030d49", lineHeight: "25px" }}>
+            <ul className="text-center" id="navigation" style={{ marginTop: '10px', }}>
+              <li>
+                <Link href="/" style={{ color: "#030d49", backgroundColor: "#fff", }}>Home</Link>&ensp;|&ensp;
+              </li>
+
+              <li>
+                <button className="dropdownbtn" style={{ color: "#030d49", backgroundColor: "#fff" }}>
+                  About Us <FontAwesomeIcon icon={faCaretDown} />
+                  <div className="dropdownmenu">
+
+                    <li>
+                      <Link href="/Chairman">Chairman's Desk</Link>
+                    </li>
+                    <li>
+                      <Link href="/Principal">principal's desk</Link>
+                    </li>
+                    <li>
+                      <Link href="/Director">Admin</Link>
+                    </li>
+                    {/*                       <li>
                         <Link href="/FacultysMain">Faculty</Link>
                       </li> */}
-                    </div>
-                  </button>
-                  &ensp;|&ensp;
-                </li>
-                <li>
-                  <button className="dropdownbtn" style={{ color: "#030d49" }}>
-                    Branches <FontAwesomeIcon icon={faCaretDown} />
-                    <div className="dropdownmenu">
-                      <li>
-                        <Link href="/Branch1">Semra Gate</Link>
-                      </li>
-                      <li>
-                        <Link href="/Branch2">Bhopal Junction</Link>
-                      </li>
-                    </div>
-                  </button>
-                  &ensp;|&ensp;
-                </li>
+                  </div>
+                </button>
+                &ensp;|&ensp;
+              </li>
+              <li>
+                <button className="dropdownbtn" style={{ color: "#030d49" }}>
+                  Branches <FontAwesomeIcon icon={faCaretDown} />
+                  <div className="dropdownmenu">
+                    <li>
+                      <Link href="/Branch1">Semra Gate</Link>
+                    </li>
+                    <li>
+                      <Link href="/Branch2">Bhopal Junction</Link>
+                    </li>
+                  </div>
+                </button>
+                &ensp;|&ensp;
+              </li>
 
-                <li>
-                  <button className="dropdownbtn" style={{ color: "#030d49" }}>
-                    Facilities <FontAwesomeIcon icon={faCaretDown} />
-                    <div className="dropdownmenu" >
-                      <li>
-                        <Link href="/AcademicFacilities">
-                          Academic Facilities
-                        </Link>
-                      </li>
-{/*                       <li>
+              <li>
+                <button className="dropdownbtn" style={{ color: "#030d49" }}>
+                  Facilities <FontAwesomeIcon icon={faCaretDown} />
+                  <div className="dropdownmenu" >
+                    <li>
+                      <Link href="/AcademicFacilities">
+                        Academic Facilities
+                      </Link>
+                    </li>
+                    {/*                       <li>
                         <Link href="/Activities">Curriculum Overview</Link>
                       </li>  */}
-                    </div>
-                  </button>
-                  &ensp;|&ensp;
-                </li>
-                <li>
-                  <button className="dropdownbtn" style={{ color: "#030d49" }}>
-                    ACADEMICS <FontAwesomeIcon icon={faCaretDown} />
-                    <div className="dropdownmenu">
-                      <li>
-                        <Link href="/AdmissionProcess">
-                          Admission Process
-                        </Link>
-                      </li>
-                    </div>
-                  </button>
-                  &ensp;|&ensp;
-                </li>
+                  </div>
+                </button>
+                &ensp;|&ensp;
+              </li>
+              <li>
+                <button className="dropdownbtn" style={{ color: "#030d49" }}>
+                  ACADEMICS <FontAwesomeIcon icon={faCaretDown} />
+                  <div className="dropdownmenu">
+                    <li>
+                      <Link href="/AdmissionProcess">
+                        Admission Process
+                      </Link>
+                    </li>
+                  </div>
+                </button>
+                &ensp;|&ensp;
+              </li>
 
-                {/* <li >
+              {/* <li >
                   <Link href="/Gallery" style={{ color: "#030d49" }}>Gallery &ensp;&ensp;</Link>
                 </li> */}
-                <li>
-                  <button className="dropdownbtn" style={{ color: "#030d49" }}>
-                    Media <FontAwesomeIcon icon={faCaretDown} />
-                    <div className="dropdownmenu">
-                      <li>
-                        <Link href="/Gallery">Photos</Link>
-                      </li>
-{/*                       <li>
+              <li>
+                <button className="dropdownbtn" style={{ color: "#030d49" }}>
+                  Media <FontAwesomeIcon icon={faCaretDown} />
+                  <div className="dropdownmenu">
+                    <li>
+                      <Link href="/Gallery">Photos</Link>
+                    </li>
+                    {/*                       <li>
                         <Link href="/GalleryVideos">Videos</Link>
                       </li> */}
-                    </div>
-                  </button>
-                  &ensp;|&ensp;
-                </li>
+                  </div>
+                </button>
+                &ensp;|&ensp;
+              </li>
 
 
-                <li>
-                  <Link href="/Rules" style={{ color: "#030d49" }}>Rules</Link>
-                  &ensp;|&ensp;
-                </li>
+              <li>
+                <Link href="/Rules" style={{ color: "#030d49" }}>Rules</Link>
+                &ensp;|&ensp;
+              </li>
 
-                <li>
-                  <Link href="/ContactUs" style={{ color: "#030d49" }}>Contact us</Link>
-                </li>
-              </ul>
-            </div>
-
-            </div>
-           
-            
-            
+              <li>
+                <Link href="/ContactUs" style={{ color: "#030d49" }}>Contact us</Link>
+              </li>
+            </ul>
           </div>
-        </div >
+
+        </div>
+
+
+
       </div >
 
 

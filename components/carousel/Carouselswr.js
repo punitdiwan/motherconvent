@@ -4,9 +4,9 @@ import { Carousel } from "react-responsive-carousel";
 
 const Carouselswr = ({ slider_data }) => {
   const slides = [
-    { title: "/placeholder/slider.jpg", description: "Lorem1 ipsum" },
-    { title: "/placeholder/slider 2.jpg", description: "Lorem2 ipsum" },
-    { title: "/placeholder/slider 3.jpg", description: "Lorem3 ipsum" },
+    { title: "/images/Mother convent school (1).png", description: "Lorem1 ipsum" },
+    { title: "/images/Mother convent school (2).png", description: "Lorem2 ipsum" },
+    { title: "/images/Mother convent school (3).png", description: "Lorem3 ipsum" },
   ];
 
   return (

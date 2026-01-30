@@ -1,3 +1,4 @@
+import { imageConfigDefault } from 'next/dist/shared/lib/image-config';
 import React from 'react';
 import { FaUserGraduate, FaShieldAlt, FaBookOpen } from 'react-icons/fa';
 
@@ -9,15 +10,22 @@ function Trust() {
           <div className="py-3">
             <div className="row">
               <div className="col-sm-6">
-{/*                 <video
+                {/* <video
                 controls
-                  poster="/images/kotraschool.jpeg"
+                  poster="/images/tab2.jpg"
                   style={{ width: '100%', height: '400px' }}
                 >
                   <source src="/videos/schoolvideo.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
-                </video>   
- */}
+                </video>    */
+                }
+                <img
+                  src="/images/m3.jpg"
+                  alt="School"
+                  style={{ width: '100%', height: '400px', objectFit: 'cover' }}
+                />
+
+
               </div>
               <div className="col-sm-6">
                 <h2>WHY TRUST US</h2>
